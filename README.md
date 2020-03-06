@@ -25,6 +25,7 @@
     - [1 to 1](https://github.com/undefinedschool/notes-dbs-relationships#1-to-1)
     - [1 to many](https://github.com/undefinedschool/notes-dbs-relationships#1-to-many)
     - [many to many](https://github.com/undefinedschool/notes-dbs-relationships#many-to-many)
+- [Cardinalidad](https://github.com/undefinedschool/notes-dbs-relationships#cardinalidad)
 
 ---
 
@@ -158,5 +159,12 @@ El problema aparece si un mismo libro puede tener varios autores, cómo represen
 Podemos pensar entonces que ahora tenemos 2 relaciones _1 to many_: 1 de `authors` hacia `books` y otra de `books` hacia `authors`.
 
 > 👉 **La tabla `authors_books` existe únicamente con el fin de unir `authors` con `books` y establecer la relación**.
+
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
+
+## Cardinalidad
+
+La [_cardinalidad_](https://www.vividcortex.com/blog/what-is-cardinality-in-a-database) expresa cuántas entidades se
+relacionan con otras, es decir, es sólo un nombre para hablar de los tipos de relaciones mencionados anteriormente (_1 to 1_, _1 to many_, _many to 1_, _many to many_).
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
