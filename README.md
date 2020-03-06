@@ -71,7 +71,7 @@ Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `cus
 
 > ⚠️ **Notar que esto implica que `customer_id` debe ser único en la tabla `Customer`, pero no necesariamente en `Order`**.
 
-### `Customer`
+#### `Customer`
 
 | customer_id | first_name | last_name | email          | address       |
 |-------------|------------|-----------|----------------|---------------|
@@ -79,7 +79,7 @@ Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `cus
 | 368         | Lynn       | Allen     | la1942@...     | 1016B 1st...  |
 | 369         | Lee        | Stout     | lee@...        | 47 Main St... |
 
-### `Order`
+#### `Order`
 
 | order_id | date     | quantity | total    | customer_id |
 |----------|----------|----------|----------|-------------|
@@ -103,7 +103,7 @@ Este es el tipo de relación más común en bases de datos relacionales.
 
 Por ejemplo, podemos tener una tabla de autores (`authors`), otra de libros (`books`) y relacionar los autores con los libros de forma tal que un/a autor/a pueda estar asociado a uno o más libros, es decir, una relación del tipo [_1 to many_](https://github.com/undefinedschool/notes-dbs#1-to-many). 
 
-##### `authors`
+#### `authors`
 
 | author_id (PK) | first_name | last_name | email          |
 |-----------|------------|-----------|----------------|
@@ -111,7 +111,7 @@ Por ejemplo, podemos tener una tabla de autores (`authors`), otra de libros (`bo
 | 446       | Robert     | Allen     | rallen@...     |
 | 447       | Jordan     | Winters   | jwinters64@... |
 
-##### `books`
+#### `books`
 
 | book_id (PK) | title                  | list_price | author_id (FK) |
 |--------------|------------------------|------------|----------------|
@@ -126,5 +126,37 @@ El problema aparece si un mismo libro puede tener varios autores, cómo represen
 | 1145         | Designing Databases    | $45        | 447              | 446              |
 | 1146         | PostgreSQL Made Simple | $39.95     | 446              | (null)           |
 | 1147         | Y U Don't Need MongoDB | $19.95     | 447              | 445              |
+
+** La solución para este tipo de casos entonces, suele ser agregar una tercer tabla, que _linkee_ (haga de enlace) entre las otras 2 y deshacernos de la _Primary Key_ `author_id` en `books`, como vemos a continuación
+
+#### `authors`
+
+| author_id (PK) | first_name | last_name | email          |
+|-----------|------------|-----------|----------------|
+| 445       | Tucker     | Morrison  | tmorrison@...  |
+| 446       | Robert     | Allen     | rallen@...     |
+| 447       | Jordan     | Winters   | jwinters64@... |
+
+#### `author_books`
+
+| author_id | book_id |
+|-----------|---------|
+| 447       | 1145    |
+| 445       | 1145    |
+| 446       | 1146    |
+| 447       | 1146    |
+
+#### `books`
+
+| book_id (PK) | title                  | list_price | 
+|--------------|------------------------|------------|
+| 1145         | Designing Databases    | $45        | 
+| 1146         | PostgreSQL Made Simple | $39.95     |
+| 1147         | Y U Don't Need MongoDB | $19.95     |
+
+
+Podemos pensar entonces que ahora tenemos 2 relaciones _1 to many_: 1 de `authors` hacia `books` y otra de `books` hacia `authors`.
+
+> 👉 **La tabla `author_books` existe únicamente con el fin de unir `authors` con `books` y establecer la relación**.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
