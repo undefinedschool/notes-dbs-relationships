@@ -37,6 +37,8 @@ Necesitamos describir formalmente las relaciones entre las tablas de nuestra bas
 
 ### Tipos de relaciones
 
+> 👉 Algo a tener en cuenta es que **no es necesario que todas las tablas de la DB tengan relación con alguna otra**.
+
 #### 1 to 1
 
 **En las relaciones _1 a 1_, una _entidad_ sólo tiene relación con otra y viceversa**. Por ejemplo, un número de pasaporte puede estar asociado a una única persona y cada persona puede tener sólo 1 número de pasaporte.
