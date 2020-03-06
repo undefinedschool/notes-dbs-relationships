@@ -171,4 +171,6 @@ Podemos pensar entonces que ahora tenemos 2 relaciones _1 to many_: 1 de `author
 La [_cardinalidad_](https://www.vividcortex.com/blog/what-is-cardinality-in-a-database) expresa cuántas entidades se
 relacionan con otras, es decir, es sólo un nombre para hablar de los tipos de relaciones mencionados anteriormente (_1 to 1_, _1 to many_ ó _many to many_).
 
+![Cardinalidad](https://i.stack.imgur.com/uuDiz.jpg)
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
