@@ -127,7 +127,7 @@ El problema aparece si un mismo libro puede tener varios autores, cómo represen
 | 1146         | PostgreSQL Made Simple | $39.95     | 446              | (null)           |
 | 1147         | Y U Don't Need MongoDB | $19.95     | 447              | 445              |
 
-** La solución para este tipo de casos entonces, suele ser agregar una tercer tabla, que _linkee_ (haga de enlace) entre las otras 2 y deshacernos de la _Primary Key_ `author_id` en `books`, como vemos a continuación
+> 👉 **La solución para este tipo de casos entonces, suele ser agregar una tercer tabla, que _linkee_ (haga de enlace) entre las otras 2** y deshacernos de la _Primary Key_ `author_id` en `books`, como vemos a continuación
 
 #### `authors`
 
