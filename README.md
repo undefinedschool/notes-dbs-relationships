@@ -62,6 +62,8 @@ También podemos tener relaciones _1 to 1_ con los datos distribuídos en 2 tabl
 |----|------------|-------------|---------|
 | 50 | 2020/03/01 | 5000        | 1       |
 
+> 👉 **Este es el tipo de relación menos frecuente en bases de datos relacionales**.
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
 
 #### 1 to many
@@ -92,7 +94,7 @@ Este tipo de relación se conoce como [_1 to many_](https://github.com/undefined
 
 > ⚠️ **Notar que la inversa no es cierta, en este caso cada orden puede tener 1 (y sólo 1) cliente asociado**.
 
-Este es el tipo de relación más común en bases de datos relacionales.
+> 👉 **Este es el tipo de relación más común en bases de datos relacionales**.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
 
