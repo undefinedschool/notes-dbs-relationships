@@ -25,7 +25,7 @@
     - [1 to 1](https://github.com/undefinedschool/notes-dbs-relationships#1-to-1)
     - [1 to many](https://github.com/undefinedschool/notes-dbs-relationships#1-to-many)
     - [many to many](https://github.com/undefinedschool/notes-dbs-relationships#many-to-many)
-- [Cardinalidad](https://github.com/undefinedschool/notes-dbs-relationships#cardinalidad)
+  - [Cardinalidad](https://github.com/undefinedschool/notes-dbs-relationships#cardinalidad)
 
 ---
 
@@ -162,9 +162,9 @@ Podemos pensar entonces que ahora tenemos 2 relaciones _1 to many_: 1 de `author
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
 
-## Cardinalidad
+### Cardinalidad
 
 La [_cardinalidad_](https://www.vividcortex.com/blog/what-is-cardinality-in-a-database) expresa cuántas entidades se
-relacionan con otras, es decir, es sólo un nombre para hablar de los tipos de relaciones mencionados anteriormente (_1 to 1_, _1 to many_, _many to 1_, _many to many_).
+relacionan con otras, es decir, es sólo un nombre para hablar de los tipos de relaciones mencionados anteriormente (_1 to 1_, _1 to many_ ó _many to many_).
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
