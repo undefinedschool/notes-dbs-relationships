@@ -20,11 +20,11 @@
 
 ## Contenido
 
-- [Relaciones]()
-  - [Tipos de relaciones]()
-    - [1 to 1]()
-    - [1 to many]()
-    - [many to many]()
+- [Relaciones](https://github.com/undefinedschool/notes-dbs-relationships#relaciones)
+  - [Tipos de relaciones](https://github.com/undefinedschool/notes-dbs-relationships#tipos-de-relaciones)
+    - [1 to 1](https://github.com/undefinedschool/notes-dbs-relationships#1-to-1)
+    - [1 to many](https://github.com/undefinedschool/notes-dbs-relationships#1-to-many)
+    - [many to many](https://github.com/undefinedschool/notes-dbs-relationships#many-to-many)
 
 ---
 
@@ -87,7 +87,7 @@ Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `cus
 | 1199     | 3/2/2011 | 47       | $902.00  | 367         |
 | 1200     | 3/2/2011 | 104      | $1500.00 | 368         |
 
-Este tipo de relación se conoce como [_1 to many_](), ya que cada `customer` puede tener asociadas 1 o más `orders`.
+Este tipo de relación se conoce como [_1 to many_](https://github.com/undefinedschool/notes-dbs-relationships#1-to-many), ya que cada `customer` puede tener asociadas 1 o más `orders`.
 
 > ⚠️ **Notar que la inversa no es cierta, en este caso cada orden puede tener 1 (y sólo 1) cliente asociado**.
 
