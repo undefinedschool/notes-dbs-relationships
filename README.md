@@ -3,12 +3,13 @@
 
 > 👉 Si te resultó útil, **se agradece que lo compartas para que le llegue a más gente!**
 
-# ![Notas sobre Bases de Datos Relacionales](https://i.imgur.com/g9S0eWn.png)
+# ![Notas sobre Bases de Datos - Relaciones](https://i.imgur.com/5fwpN9v.png)
 
 ## Notas relacionadas
 
 ### `databases`
 
+- [**Bases De Datos - Intro**](https://github.com/undefinedschool/notes-dbs)
 - [**SQL**](https://github.com/undefinedschool/notes-sql/)
 
 ### `backend`
@@ -19,13 +20,19 @@
 
 ## Contenido
 
+- [Relaciones]()
+  - [Tipos de relaciones]()
+    - [1 to 1]()
+    - [1 to many]()
+    - [many to many]()
+
 ---
 
 ## Relaciones
 
 Necesitamos describir formalmente las relaciones entre las tablas de nuestra base de datos. **La forma en que describimos las relaciones es a través de las claves** (Primary Keys, Foreign Keys).
 
-[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
 
 ### Tipos de relaciones
 
@@ -54,13 +61,13 @@ También podemos tener relaciones _1 to 1_ con los datos distribuídos en 2 tabl
 |----|------------|-------------|---------|
 | 50 | 2020/03/01 | 5000        | 1       |
 
-[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
 
 #### 1 to many
 
 **En las relaciones _1 a muchos_, una _entidad_ puede tener relaciones con 1 o más entidades (pero no a la inversa)**. 
 
-Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `customer_id`. En la tabla `Customer`, cumple el rol de [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1), mientras que en la tabla `Order`, cumple el rol de [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1) 
+Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `customer_id`. En la tabla `Customer`, cumple el rol de [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1), mientras que en la tabla `Order`, cumple el rol de [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1).
 
 > ⚠️ **Notar que esto implica que `customer_id` debe ser único en la tabla `Customer`, pero no necesariamente en `Order`**.
 
@@ -80,13 +87,13 @@ Por ejemplo, las siguientes tablas se encuentran relacionadas a través del `cus
 | 1199     | 3/2/2011 | 47       | $902.00  | 367         |
 | 1200     | 3/2/2011 | 104      | $1500.00 | 368         |
 
-Este tipo de relación se conoce como [_1 to many_](https://github.com/undefinedschool/notes-dbs#1-to-many), ya que cada `customer` puede tener asociadas 1 o más `orders`.
+Este tipo de relación se conoce como [_1 to many_](), ya que cada `customer` puede tener asociadas 1 o más `orders`.
 
 > ⚠️ **Notar que la inversa no es cierta, en este caso cada orden puede tener 1 (y sólo 1) cliente asociado**.
 
 Este es el tipo de relación más común en bases de datos relacionales.
 
-[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
 
 #### many to many
 
@@ -120,6 +127,4 @@ El problema aparece si un mismo libro puede tener varios autores, cómo represen
 | 1146         | PostgreSQL Made Simple | $39.95     | 446              | (null)           |
 | 1147         | Y U Don't Need MongoDB | $19.95     | 447              | 445              |
 
-##### Tabla de enlace
-
-[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs#contenido)
+[↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
