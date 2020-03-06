@@ -132,19 +132,19 @@ El problema aparece si un mismo libro puede tener varios autores, cómo represen
 #### `authors`
 
 | author_id (PK) | first_name | last_name | email          |
-|-----------|------------|-----------|----------------|
-| 445       | Tucker     | Morrison  | tmorrison@...  |
-| 446       | Robert     | Allen     | rallen@...     |
-| 447       | Jordan     | Winters   | jwinters64@... |
+|----------------|------------|-----------|----------------|
+| 445            | Tucker     | Morrison  | tmorrison@...  |
+| 446            | Robert     | Allen     | rallen@...     |
+| 447            | Jordan     | Winters   | jwinters64@... |
 
-#### `author_books`
+#### `authors_books`
 
-| author_id | book_id |
-|-----------|---------|
-| 447       | 1145    |
-| 445       | 1145    |
-| 446       | 1146    |
-| 447       | 1146    |
+| authors_books_id (PK) | author_id | book_id |
+|-----------------------|-----------|---------|
+| 1                     | 447       | 1145    |
+| 2                     | 445       | 1145    |
+| 3                     | 446       | 1146    |
+| 4                     | 447       | 1146    |
 
 #### `books`
 
@@ -157,6 +157,6 @@ El problema aparece si un mismo libro puede tener varios autores, cómo represen
 
 Podemos pensar entonces que ahora tenemos 2 relaciones _1 to many_: 1 de `authors` hacia `books` y otra de `books` hacia `authors`.
 
-> 👉 **La tabla `author_books` existe únicamente con el fin de unir `authors` con `books` y establecer la relación**.
+> 👉 **La tabla `authors_books` existe únicamente con el fin de unir `authors` con `books` y establecer la relación**.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
