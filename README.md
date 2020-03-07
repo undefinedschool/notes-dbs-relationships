@@ -31,7 +31,9 @@
 
 ## Relaciones
 
-**Una relación se crea cuando una columna referencia a otra columna, de otra tabla. Esto es lo que se conoce como [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1)**.
+Una relación se crea cuando **una columna de una tabla referencia a otra columna de otra tabla, la cual se conoce como [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1)**.
+
+> 👉 Una _Foreign Key_ siempre hace referencia a la [_Primary Key_](https://github.com/undefinedschool/notes-dbs#primary-key-1) de otra tabla o a una columna con la restricción [`UNIQUE`](https://github.com/undefinedschool/notes-dbs#unique).
 
 Necesitamos describir formalmente las relaciones entre las tablas de nuestra base de datos. **La forma en que describimos las relaciones es a través de las claves** (Primary Keys, Foreign Keys).
 
