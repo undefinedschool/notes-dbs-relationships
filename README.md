@@ -100,10 +100,8 @@ Este tipo de relación se conoce como [_1 to many_](https://github.com/undefined
 
 > ⚠️ **Notar que la inversa no es cierta, en este caso cada orden puede tener 1 (y sólo 1) cliente asociado**.
 
-[![Database Design - Designing One-to-Many Relationships
-](https://img.youtube.com/vi/DzchNE1pbrk/0.jpg)](https://www.youtube.com/watch?v=DzchNE1pbrk)
-> Ver [Database Design - Designing One-to-Many Relationships
-](https://www.youtube.com/watch?v=DzchNE1pbrk)
+[![One-to-Many Relationship](https://img.youtube.com/vi/KjA2LhT4TRU/0.jpg)](https://www.youtube.com/watch?v=KjA2LhT4TRU)
+> Ver [One-to-Many Relationship](https://www.youtube.com/watch?v=KjA2LhT4TRU)
 
 > 👉 **Este es el tipo de relación más común en bases de datos relacionales**.
 
