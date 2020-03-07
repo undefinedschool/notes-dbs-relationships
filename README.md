@@ -190,4 +190,4 @@ relacionan con otras, es decir, es sólo un nombre para hablar de los tipos de r
 
 ---
 
-<sup id="cite_note-1"><a href="#cite_ref-1">1</a></sup> Con las tablas intermedias también podemos utilizar claves compuestas ([aka _Composite Keys_](https://stackoverflow.com/questions/1285967/postgres-how-to-do-composite-keys/1285987)).
+<sup id="cite_note-1"><a href="#cite_ref-1">1</a></sup> Con las tablas intermedias también podemos utilizar claves compuestas (aka [_Composite Keys_](https://stackoverflow.com/questions/1285967/postgres-how-to-do-composite-keys/1285987)).
