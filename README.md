@@ -31,6 +31,8 @@
 
 ## Relaciones
 
+**Una relación se crea cuando una columna referencia a otra columna, de otra tabla. Esto es lo que se conoce como [_Foreign Key_](https://github.com/undefinedschool/notes-dbs#foreign-key-1)**.
+
 Necesitamos describir formalmente las relaciones entre las tablas de nuestra base de datos. **La forma en que describimos las relaciones es a través de las claves** (Primary Keys, Foreign Keys).
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
@@ -51,8 +53,8 @@ Para diseñar relaciones _1 to 1_, la forma más común es poner los datos en di
 
 En este caso, el `user_id` 1 está asociado sólo con el `username` ltorvalds y viceversa.
 
-[![Database Design - Designing One-to-One Relationships](https://img.youtube.com/vi/M-Rw21NGORo/0.jpg)](https://www.youtube.com/watch?v=M-Rw21NGORo)
-> Ver [Database Design - Designing One-to-One Relationships](https://www.youtube.com/watch?v=M-Rw21NGORo)
+[![One-to-One Relationship](https://img.youtube.com/vi/lDnL1gwCE0o/0.jpg)](https://www.youtube.com/watch?v=lDnL1gwCE0o)
+> Ver [One-to-One Relationship](https://www.youtube.com/watch?v=lDnL1gwCE0o)
 
 También podemos tener relaciones _1 to 1_ con los datos distribuídos en 2 tablas, por ejemplo, si queremos relacionar usuarios con tarjetas de crédito, podemos hacer
 
