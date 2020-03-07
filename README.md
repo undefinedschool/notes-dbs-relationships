@@ -68,6 +68,8 @@ También podemos tener relaciones _1 to 1_ con los datos distribuídos en 2 tabl
 |----|------------|-------------|---------|
 | 50 | 2020/03/01 | 5000        | 1       |
 
+(en este caso, `user_id` es una _Foreign Key_ que referencia al `id` de la tabla de usuarios)
+
 > 👉 **Este es el tipo de relación menos frecuente en bases de datos relacionales**.
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
