@@ -141,7 +141,7 @@ El problema aparece si un mismo libro puede tener varios autores, cómo represen
 | 1146         | PostgreSQL Made Simple | $39.95     | 446              | (null)           |
 | 1147         | Y U Don't Need MongoDB | $19.95     | 447              | 445              |
 
-> 👉 **La solución para este tipo de casos entonces, suele ser agregar una tercer tabla, intermedia, que _linkee_ (haga de enlace) entre las otras 2**.
+> 👉 **La solución para este tipo de casos entonces, suele ser agregar una tercer tabla, intermedia, que _linkee_ (haga de enlace) entre las otras 2**. <sup id="cite_ref-1"><a href="#cite_note-1">[1]</a></sup>
 
 #### `authors`
 
@@ -187,3 +187,7 @@ relacionan con otras, es decir, es sólo un nombre para hablar de los tipos de r
 ![Cardinalidad](https://i.stack.imgur.com/uuDiz.jpg)
 
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
+
+---
+
+<sup id="cite_note-1"><a href="#cite_ref-1">1</a></sup> Con las tablas intermedias también podemos utilizar claves compuestas ([aka _Composite Keys_](https://stackoverflow.com/questions/1285967/postgres-how-to-do-composite-keys/1285987)).
