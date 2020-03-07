@@ -174,6 +174,9 @@ Nos deshacemos de la _Primary Key_ `author_id` en `books`.
 
 > 👉 **La tabla `authors_books` existe únicamente con el fin de unir `authors` con `books` y establecer la relación**.
 
+[![Many-to-Many Relationship](https://img.youtube.com/vi/a-o0d_e9mW8/0.jpg)](https://www.youtube.com/watch?v=a-o0d_e9mW8)
+> Ver [Many-to-Many Relationship](https://www.youtube.com/watch?v=a-o0d_e9mW8)
+
 [↑ Ir al inicio](https://github.com/undefinedschool/notes-dbs-relationships#contenido)
 
 ### Cardinalidad
