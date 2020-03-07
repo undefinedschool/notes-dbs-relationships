@@ -137,7 +137,7 @@ El problema aparece si un mismo libro puede tener varios autores, cómo represen
 | 1146         | PostgreSQL Made Simple | $39.95     | 446              | (null)           |
 | 1147         | Y U Don't Need MongoDB | $19.95     | 447              | 445              |
 
-> 👉 **La solución para este tipo de casos entonces, suele ser agregar una tercer tabla, que _linkee_ (haga de enlace) entre las otras 2** y deshacernos de la _Primary Key_ `author_id` en `books`, como vemos a continuación
+> 👉 **La solución para este tipo de casos entonces, suele ser agregar una tercer tabla, que _linkee_ (haga de enlace) entre las otras 2**.
 
 #### `authors`
 
@@ -164,8 +164,9 @@ El problema aparece si un mismo libro puede tener varios autores, cómo represen
 | 1146         | PostgreSQL Made Simple | $39.95     |
 | 1147         | Y U Don't Need MongoDB | $19.95     |
 
+Nos deshacemos de la _Primary Key_ `author_id` en `books`.
 
-Podemos pensar entonces que ahora tenemos 2 relaciones _1 to many_: 1 de `authors` hacia `books` y otra de `books` hacia `authors`.
+**Podemos decir entonces que ahora tenemos 2 relaciones _1 to many_**: 1 de `authors` hacia `books` y otra de `books` hacia `authors`.
 
 > 👉 **La tabla `authors_books` existe únicamente con el fin de unir `authors` con `books` y establecer la relación**.
 
